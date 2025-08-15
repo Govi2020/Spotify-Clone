@@ -33,7 +33,7 @@ const SongCard = ({ song, i, data, activeSong, isPlaying }) => {
                     />
                 </div>
                 <img
-                    src={song?.images?.coverart}
+                    src={song?.images?.coverart || song?.attributes.artwork.url}
                     alt="song_img"
                     className="object-cover h-full"
                 />
